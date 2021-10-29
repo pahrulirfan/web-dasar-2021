@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Document</title>
 </head>
+
 <body>
     <form action="" method="post">
-        
+
+        NEVER TRUST YOUR USER INPUT
+
+        <label for="nim">NIM</label>
+        <input required type="text" name="txtnim" id="nim" placeholder="Masukkan nim anda"> <br>
+
+        <label for="nama">Nama</label>
+        <input required type="text" name="nama" id="nama"> <br>
+
+        <label for="jk">Jenis Kelamin</label>
+        <input type="radio" name="jk" id='jk' value="L"> Laki - Laki
+        <input type="radio" name="jk" id="jk" value="P"> Perempuan <br>
+
+        <label for="jurusan">Jurusan</label>
+        <select name="jurusan" id="jurusan" required>
+            <option value="">Pilih Jurusan</option>
+            <option value="D3SI">D3SI</option>
+            <option selected value="S1RPL">S1 RPL</option>
+        </select> <br>
+
+        <label for="catatan">Catatan</label>
+        <textarea required name="catatan" id="catatan" cols="50" rows="3"></textarea> <br>
+
+        <input type="submit" name="submit" value="Simpan Data">
+        <input type="reset" value="Batal">
     </form>
 </body>
+
 </html>
