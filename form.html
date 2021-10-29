@@ -2,37 +2,56 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Form</title>
 </head>
 
 <body>
-    <form action="" method="post">
 
-        NEVER TRUST YOUR USER INPUT
+    <div class="container">
 
-        <label for="nim">NIM</label>
-        <input required type="text" name="txtnim" id="nim" placeholder="Masukkan nim anda"> <br>
+        <form action="" method="post">
 
-        <label for="nama">Nama</label>
-        <input required type="text" name="nama" id="nama"> <br>
+            <div class="mb-3">
+                <label for="nim">NIM</label>
+                <input required class="form-control" type="text" name="txtnim" id="nim" placeholder="Masukkan nim anda">
+            </div>
 
-        <label for="jk">Jenis Kelamin</label>
-        <input type="radio" name="jk" id='jk' value="L"> Laki - Laki
-        <input type="radio" name="jk" id="jk" value="P"> Perempuan <br>
+            <div class="mb-3">
+                <label for="nama">Nama</label>
+                <input required class="form-control" type="text" name="nama" id="nama">
+            </div>
 
-        <label for="jurusan">Jurusan</label>
-        <select name="jurusan" id="jurusan" required>
-            <option value="">Pilih Jurusan</option>
-            <option value="D3SI">D3SI</option>
-            <option selected value="S1RPL">S1 RPL</option>
-        </select> <br>
+            <div class="mb-3">
+                <label for="jk">Jenis Kelamin</label>
+                <input type="radio" name="jk" id='jk' value="L"> Laki - Laki
+                <input type="radio" name="jk" id="jk" value="P"> Perempuan
+            </div>
 
-        <label for="catatan">Catatan</label>
-        <textarea required name="catatan" id="catatan" cols="50" rows="3"></textarea> <br>
+            <div class="mb-3">
+                <label for="jurusan">Jurusan</label>
+                <select class="form-control" name="jurusan" id="jurusan" required>
+                    <option value="">Pilih Jurusan</option>
+                    <option value="D3SI">D3SI</option>
+                    <option selected value="S1RPL">S1 RPL</option>
+                </select>
+            </div>
 
-        <input type="submit" name="submit" value="Simpan Data">
-        <input type="reset" value="Batal">
-    </form>
+            <div class="mb-3">
+                <label for="catatan">Catatan</label>
+                <textarea class="form-control" required name="catatan" id="catatan" cols="50" rows="3"></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-primary" name="submit" value="Simpan Data">
+            <input type="reset" value="Batal" class="btn btn-warning">
+        </form>
+
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
