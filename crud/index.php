@@ -36,6 +36,15 @@
             <td> <?php echo $data->title; ?> </td>
             <td> <?php echo $data->body; ?> </td>
             <td> <?php echo $data->keyword; ?> </td>
+            <td>
+                <a href="edit.php?id=<?= $data->id;?>">
+                    <input type="submit" value="edit" class="btn btn-warning">
+                </a>
+                <a href="hapus.php?id=<?= $data->id?>">
+                    <input type="submit" value="hapus" onclick="confirm('yakin hapus data?')" class="btn btn-danger">
+                </a>
+            </td>
+
         </tr>
 
         <?php
