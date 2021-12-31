@@ -15,8 +15,9 @@
         $txttitle = $_POST['txttitle'];
         $txtbody = $_POST['txtbody'];
         $txtkeyword = $_POST['txtkeyword'];
-        $sql = "INSERT INTO article VALUES (NULL, '$txtauthor', '$txttitle',
-                                            '$txtbody', '$txtkeyword')";
+
+        $sql = "INSERT INTO article VALUES (NULL, '$txtauthor', '$txttitle', '$txtbody', '$txtkeyword')";
+
         $query = mysqli_query($koneksi, $sql);
         if ($query) {
             header('location: index.php');
